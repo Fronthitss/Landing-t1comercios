@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/MuliBlack.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MuliBlack.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MuliBlack.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/MuliBlack.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/MuliBlack.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MuliBlack.svg#Prata') format('svg');
+    /* Legacy iOS */
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/MuliExtraBold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MuliExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MuliExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/MuliExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/MuliExtraBold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MuliExtraBold.svg#Prata') format('svg');
+    /* Legacy iOS */
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/MuliBold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MuliBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MuliBold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/MuliBold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/MuliBold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MuliBold.svg#Prata') format('svg');
+    /* Legacy iOS */
+    font-weight: 700, bold;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/MuliSemiBold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MuliSemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MuliSemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/MuliSemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/MuliSemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MuliSemiBold.svg#Prata') format('svg');
+    /* Legacy iOS */
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/MuliLight.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MuliLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MuliLight.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/MuliLight.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/MuliLight.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MuliLight.svg#Prata') format('svg');
+    /* Legacy iOS */
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/MuliExtraLight.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MuliExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MuliExtraLight.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/MuliExtraLight.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/MuliExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MuliExtraLight.svg#Prata') format('svg');
+    /* Legacy iOS */
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/MuliRegular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MuliRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MuliRegular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/MuliRegular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/MuliRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MuliRegular.svg#Prata') format('svg');
+    /* Legacy iOS */
+}
+
+
+/*Non important*/
+
+@media(min-width:1200px) {
+    .t1col-6 {
+        flex: 0 0 auto;
+        width: 46%;
+        padding: 0px 2%;
+    }
+    .t1col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0px 2%;
+    }
+}
+
+.t1row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Muli';
+}
+
+a {
+    width: fit-content;
+}
+
+.container-margin {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.t1container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.typography {
+    font-size: 4rem;
+}
+
+.exampleSpace {
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+
+/*Inputs*/
+
+.input {
+    position: relative;
+    display: block;
+}
+
+.errorMessage {
+    color: #db3b2b;
+    font-weight: 600;
+    margin-left: 6px;
+    font-size: .8rem;
+}
+
+.inputDesc {
+    color: #adadad;
+    font-weight: 600;
+    margin-left: 6px;
+    font-size: .8rem;
+}
+
+.inputLabel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: calc(.5rem * 0.75) calc(.5rem * .5);
+    margin: calc(.2rem * 0.75 + 5px) calc(.7rem);
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: white;
+    transition: transform 120ms ease-in;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: .8rem;
+    color: #adadad;
+}
+
+.inputField {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: .8px solid #dbdfe4;
+    padding: calc(.5rem * 1.5) 1.1rem;
+    color: currentColor;
+    background: transparent;
+    border-radius: 8px;
+    height: 45px;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #4c4c4c;
+    font-family: 'Muli';
+}
+
+.input.number .inputLabel {
+    transform: translate(.25rem, -80%) scale(1);
+}
+
+.input.number .inputField {
+    padding-left: .3rem;
+    position: relative;
+    border-radius: 0px 8px 8px 0px;
+    border-left: none;
+}
+
+.inputField:focus+.inputLabel,
+.inputField:not(:placeholder-shown)+.inputLabel {
+    transform: translate(.25rem, -80%) scale(1);
+    color: #ADADAD;
+}
+
+.inputField:focus {
+    outline: none;
+}
+
+.inputField.error {
+    border-color: #db3b2b;
+}
+
+.numberInput {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.numberInput span {
+    display: flex;
+    align-items: center;
+    padding: 0px 8px 0px 15px;
+    border: .8px solid #dbdfe4;
+    border-radius: 8px 0px 0px 8px;
+    border-right: none;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #4c4c4c;
+    font-family: 'Muli';
+}
+
+
+/*colors*/
+
+.colorHex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97px;
+    width: 97px;
+    border: 5px solid white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    border-radius: 50%;
+    color: white;
+    font-weight: 900;
+    font-size: .8rem;
+    margin-right: 30px;
+}
+
+.mainColor {
+    background-color: #db3b2b;
+}
+
+.secondaryColor {
+    background-color: #dbdfe4;
+}
+
+.tertiaryColor {
+    background-color: #41bac6;
+}
+
+.textMainColorExample {
+    background-color: #4c4c4c;
+}
+
+.textSecondaryColorExample {
+    background-color: #adadad;
+}
+
+.textMainColor {
+    color: #4c4c4c;
+}
+
+.textSecondaryColor {
+    color: #adadad;
+}
+
+
+/*font weight*/
+
+.extra-light {
+    font-weight: 200;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 800;
+}
+
+.black {
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: #41bac6;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+#checkbox span {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#icons i {
+    font-size: 45px;
+}

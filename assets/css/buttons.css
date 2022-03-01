@@ -1,0 +1,87 @@
+/*Buttons*/
+
+#buttons button {
+    margin-right: 20px;
+}
+
+.button-t1 {
+    height: 45px;
+    font-family: 'Muli';
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1vw;
+    cursor: pointer;
+}
+
+.buttonLarge {
+    padding: 0px 3vw;
+}
+
+.button-t1.primary {
+    background-color: #db3b2b;
+    color: white;
+    font-weight: bold;
+}
+
+.button-t1.primary:hover {
+    background-color: #c52d1d;
+}
+
+.button-t1.primary:hover[disabled]:hover {
+    background-color: transparent;
+    color: #9e9e9e;
+}
+
+.button-t1.primary[disabled] {
+    background-color: #bebebe;
+    color: #9e9e9e;
+}
+
+.button-t1.primary:hover:not([disabled]):hover {
+    background-color: #c52d1d;
+}
+
+.button-t1.bordered.primary {
+    background-color: transparent;
+    color: #db3b2b;
+    border: 2px solid #db3b2b;
+    font-weight: bold;
+}
+
+.button-t1.bordered.primary:hover {
+    background-color: #db3b2b!important;
+    color: white!important;
+}
+
+.button-t1.bordered.primary:hover .t1-color-primary {
+    color: white!important;
+}
+
+.button-t1.secondary {
+    background-color: #f4f5f7;
+    border: 1px solid #dbdfe4;
+    font-weight: 800;
+}
+
+.button-t1.secondary:hover {
+    background-color: #dbdfe4;
+}
+
+.button-t1.tertiary {
+    background-color: white;
+    border: 1px solid #dbdfe4;
+    font-weight: 500;
+}
+
+.button-t1.tertiary:hover {
+    background-color: #f4f5f7;
+}
+
+.button-t1 i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
