@@ -21,6 +21,7 @@
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="https://assets.t1paginas.com/ESTILOS/t1Styles/css/styles.css">
         <!-- NO FOUND -- link rel="stylesheet" type="text/css" href="https://assets.t1paginas.com/ESTILOS/t1Styles/css/t1icons.css"-->
@@ -42,22 +43,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Beneficios</a>
+                            <a class="nav-link" href="#benefits" tabindex="-1" aria-disabled="true">Beneficios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Requisitos</a>
+                            <a class="nav-link" href="#requisitos" tabindex="-1" aria-disabled="true">Requisitos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Comisiones</a>
+                            <a class="nav-link" href="#comisiones" tabindex="-1" aria-disabled="true">Comisiones</a>
                         </li>
                         <li class="nav-item d-none d-xl-block">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
                         </li>
                         <li class="nav-item">
-                            <a class="button-t1 bordered primary" href="#">Inicia sesión</a>
+                            <a class="button-t1 bordered primary" href="https://selfservice.claroshop.com/">Inicia sesión</a>
                         </li>
                         <li class="nav-item ms-xl-3 mt-3 mt-xl-0">
-                            <a class="button-t1 primary px-3 " href="#">Comienza a vender</a>
+                            <a class="button-t1 primary px-3 " href="https://www.claroshop.com/c/vender-en-internet/">Comienza a vender</a>
                         </li>
                     </ul>
                 </div>
@@ -99,7 +100,8 @@
         </div>
         <!-- /BANNER -->
         <!-- BENEFITS -->
-        <div class="fastLookContainer py-5" id="benefits">
+        <div id="benefits" class="pt-5"></div>
+        <div class="fastLookContainer">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-lg-3">
@@ -160,7 +162,8 @@
             </div>
         </div>
         <!-- /BENEFITS-->
-        <!-- INFO -->
+        <!-- REQ -->
+        <div id="requisitos" class="pt-4 pb-5"></div>
         <div class="info border-top">
             <div class="container">
                 <div class="row justify-content-lg-between justify-content-center">
@@ -188,7 +191,7 @@
                             </ul>
                             <div class="text-center">
                                 <div class="info-btn mb-5 mb-lg-0">
-                                    <a href="#" class="btn-red primary">Comenzar a vender</a>
+                                    <a href="https://www.claroshop.com/c/vender-en-internet/" class="btn-red primary">Comenzar a vender</a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +199,7 @@
                 </div>
             </div>
         </div>
-        <div class="info border-top">
+        <div id="comisiones" class="info border-top">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="1000" class="row py-4 aos-init aos-animate">
                     <div class="col-lg-5 img-lc col-xs-12">
@@ -233,11 +236,11 @@
                                             <li>
                                                 <h5 class="h5">Plataforma</h5>
                                             </li>
-                                            <li><a href="#">Beneficios</a></li>
-                                            <li><a href="#">Requisitos</a></li>
-                                            <li><a href="#">Tarifas de envio</a></li>
-                                            <li><a href="#">Comienza a vender</a></li>
-                                            <li><a href="#">Inicia sesión</a></li>
+                                            <li><a href="#benefits">Beneficios</a></li>
+                                            <li><a href="#requisitos">Requisitos</a></li>
+                                            <li><a class="Click-here-2">Tarifas de envio</a></li>
+                                            <li><a href="https://www.claroshop.com/c/vender-en-internet/">Comienza a vender</a></li>
+                                            <li><a href="https://selfservice.claroshop.com/">Inicia sesión</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-6 col-lg-4">
@@ -245,11 +248,11 @@
                                             <li>
                                                 <h5 class="h5">Soporte</h5>
                                             </li>
-                                            <li><a class="footerFont" target="_blank" href="#">Centro de ayuda</a></li>
-                                            <li><a class="footerFont" href="#">Contacto</a></li>
+                                            <!--li><a class="footerFont" target="_blank" href="#">Centro de ayuda</a></li-->
+                                            <li><a class="footerFont" href="https://share.hsforms.com/144X7kzbDSCur9hQEMHkwbg4e66z">Contacto</a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-12 col-lg-4">
+                                    <!--div class="col-12 col-lg-4">
                                         <ul class="_links-header">
                                             <li>
                                                 <h5 class="h5">Legal</h5>
@@ -257,18 +260,18 @@
                                             <li><a class="footerFont" href="#" target="_blank">Aviso de privacidad</a></li>
                                             <li><a class="footerFont" href="#" target="_blank">Términos y condiciones </a></li>
                                         </ul>
-                                    </div>
+                                    </div-->
                                 </div>
                             </div>
                         </nav>
                     </div>
                     <div class="col-md-4">
                         <div class="_social-footer">
-                            <a href="#" target="_blank" title="facebook link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/facebook-f-brands.svg"></a>
-                            <a href="#" target="_blank" title="Twitter Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/twitter-brands.svg"></a>
-                            <a href="#" target="_blank" title="instagram Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/instagram-brands.svg"></a>
-                            <a href="#" target="_blank" title="Linkedin Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/linkedin-in-brands.svg"></a>
-                            <a href="#" target="_blank" title="Youtube Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/youtube-square-brands.svg"></i>
+                            <a href="https://www.facebook.com/claroshopmx" target="_blank" title="facebook link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/facebook-f-brands.svg"></a>
+                            <!--a href="#" target="_blank" title="Twitter Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/twitter-brands.svg"></a-->
+                            <a href="https://www.instagram.com/claroshop/" target="_blank" title="instagram Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/instagram-brands.svg"></a>
+                            <a href="https://www.linkedin.com/company/claro-shop-marketplace" target="_blank" title="Linkedin Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/linkedin-in-brands.svg"></a>
+                            <a href="https://www.youtube.com/channel/UCjOhZJ8Zp46vjYrLNgzgh_g" target="_blank" title="Youtube Link"><img src="https://assets.t1paginas.com/IMAGENES/Landing/youtube-square-brands.svg"></i>
                             </a>
                         </div>
                     </div>
@@ -281,5 +284,141 @@
             </div>
         </footer>
         <!-- /FOOTER -->
+        <!-- POPUP -->
+        <div class="popup-vender">
+            <div class="custom-model-main-2" id="custom-model-main-2">
+                <div class="custom-model-inner-2">        
+                    <div class="close-btn-2">×</div>
+                    <div class="custom-model-wrap-2">
+                        <div class="pop-up-content-wrap-2">
+                            <div class="comisiones">
+                                <p class="titulo-pop">Tarifas de envío</p>
+                                <table class="tarifas-tabla">
+                                    <tr>
+                                        <th></th>
+                                        <th>Dropshipping</th>
+                                        <th>Fulfillment</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Hasta 1 kg</td>
+                                        <td>$74</td>
+                                        <td>$65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 - 2 kg</td>
+                                        <td>$83</td>
+                                        <td>$73</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 - 3 kg</td>
+                                        <td>$95</td>
+                                        <td>$83</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 - 5 kg</td>
+                                        <td>$111</td>
+                                        <td>$98</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 - 7 kg</td>
+                                        <td>$133</td>
+                                        <td>$116</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7 - 9 kg</td>
+                                        <td>$155</td>
+                                        <td>$135</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9 - 12 kg</td>
+                                        <td>$188</td>
+                                        <td>$165</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12 - 15 kg</td>
+                                        <td>$206</td>
+                                        <td>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15 - 20 kg</td>
+                                        <td>$260</td>
+                                        <td>$227</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20 - 30 kg</td>
+                                        <td>$332</td>
+                                        <td>$300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30 - 40 kg</td>
+                                        <td>$466</td>
+                                        <td>$408</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40 - 50 kg</td>
+                                        <td>$691</td>
+                                        <td>$605</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50 - 60 kg</td>
+                                        <td>$820</td>
+                                        <td>$718</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60 - 65 kg</td>
+                                        <td>$1,010</td>
+                                        <td>$883</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>  
+                </div>  
+                <div class="bg-overlay-2"></div>
+            </div>
+        </div>
+        <!-- /POPUP -->
+        <script type="text/javascript">
+            $(".Click-here").on('click', function() {
+                document.getElementById("custom-model-main").style.display="block";
+                $(".custom-model-main").addClass('model-open');
+            }); 
+    
+            $(".close-btn, .bg-overlay").click(function(){
+                document.getElementById("custom-model-main").style.display="none";
+                $(".custom-model-main").removeClass('model-open');
+            });
+    
+    
+            $(".Click-here-2").on('click', function() {
+                document.getElementById("custom-model-main-2").style.display="block";
+                $(".custom-model-main-2").addClass('model-open-2');
+            }); 
+    
+            $(".close-btn-2, .bg-overlay-2").click(function(){
+                document.getElementById("custom-model-main-2").style.display="none";
+                $(".custom-model-main-2").removeClass('model-open-2');
+            });
+    
+            $(".Click-here-3").on('click', function() {
+                document.getElementById("custom-model-main-3").style.display="block";
+                $(".custom-model-main-3").addClass('model-open-3');
+            }); 
+    
+            $(".close-btn-3, .bg-overlay-3").click(function(){
+                document.getElementById("custom-model-main-3").style.display="none";
+                $(".custom-model-main-3").removeClass('model-open-3');
+            });
+    
+            $(".Click-here-4").on('click', function() {
+                document.getElementById("custom-model-main-4").style.display="block";
+                $(".custom-model-main-4").addClass('model-open-4');
+            }); 
+    
+            $(".close-btn-4, .bg-overlay-4").click(function(){
+                document.getElementById("custom-model-main-4").style.display="none";
+                $(".custom-model-main-4").removeClass('model-open-4');
+            });
+        </script>
     </body>
 </html>

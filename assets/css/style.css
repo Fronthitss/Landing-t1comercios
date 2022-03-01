@@ -1,5 +1,8 @@
 /*
 */
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     color: #222222;
@@ -374,4 +377,305 @@ body {
     .img-bg{
         height: 398px;
     }
+}
+
+/*POPUP*/
+.custom-model-main, .custom-model-main-2, .custom-model-main-3, .custom-model-main-4 {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* z-index: 1050; */
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear, z-index 0.15;
+    -o-transition: opacity 0.15s linear, z-index 0.15;
+    transition: opacity 0.15s linear, z-index 0.15;
+    z-index: -1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+.model-open, .model-open-2, .model-open-3, .model-open-4 {
+    z-index: 99999;
+    opacity: 1;
+    overflow: hidden;
+}
+.custom-model-inner, .custom-model-inner-2, .custom-model-inner-3, .custom-model-inner-4 {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    margin: 50px auto;
+    max-width: 97%;
+}
+.custom-model-wrap, .custom-model-wrap-2, .custom-model-wrap-3, .custom-model-wrap-4 {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: 0;
+    text-align: left;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+.model-open .custom-model-inner, .model-open-2 .custom-model-inner-2, .model-open-3 .custom-model-inner-3, .model-open-4 .custom-model-inner-4 {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    position: relative;
+    z-index: 999;
+}
+.model-open .bg-overlay, .model-open-2 .bg-overlay-2, .model-open-3 .bg-overlay-3, .model-open-4 .bg-overlay-4 {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+.bg-overlay, .bg-overlay-2, .bg-overlay-3, .bg-overlay-4 {
+    background: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-transition: background 0.15s linear;
+    -o-transition: background 0.15s linear;
+    transition: background 0.15s linear;
+}
+.close-btn, .close-btn-2, .close-btn-3, .close-btn-4 {
+    position: absolute;
+    right: 0;
+    top: -33px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 30px;
+    color: #fff;
+}
+.comisiones{
+    width: 90%;
+    margin: auto;
+}
+.titulo-pop{
+    font-size: 1.5rem;
+    padding: 2% 0;
+    font-weight: 800;
+    margin: 0;
+}
+.tarifas-tabla {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+    font-weight: 400;
+    vertical-align: middle;
+}
+.tarifas-tabla td, .tarifas-tabla th {
+  text-align: left;
+  padding: 4px 8px;
+}
+.tarifas-tabla tr:nth-child(even) {
+  background-color: #F8F8FA;
+}
+.tarifas-fulfillment-pop{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conectate-video{
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.conectate-video iframe{
+    width: 100%;
+    height: 100%;
+}
+.devoluciones-informacion{
+    width: 70%;
+    margin: auto;
+}
+.titulo-devoluciones-pop{
+    font-size: 1.5rem;
+    padding: 1% 0;
+    font-weight: 800;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.subtit-devoluciones-pop{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.imagen-devoluciones{
+    width: 100%;
+    margin: auto;
+}
+.imagen-devoluciones img{
+    width: 100%;
+}
+.imagen-devoluciones p{
+    margin-top: -65px;
+    width: 55%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+}
+.detalles-devoluciones{
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-style: italic;
+    width: 90%;
+    margin: auto;
+}
+.correo-pop{
+    width: 60%;
+    text-align: center;
+    margin: 2% auto;
+    padding: 2%;
+    border: solid 1px gray;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.correo-pop a{
+    color: #1CA9DC;
+}
+.imagen-pop{
+    width: 30%;
+    margin: auto;
+}
+.imagen-pop img{
+    width: 100%;
+}
+/*mobile*/
+@media (max-width: 768px), print {
+    .custom-model-inner, .custom-model-inner-2, .custom-model-inner-3, .custom-model-inner-4{
+        margin-top: 45px; width: 90%;
+    }
+    #desktop{display: none;}
+    #mobile{display: block;}
+    .banner-superior-vender p{font-size: 2.5rem;}
+    .buttonbannerprincipal_comienzaavender_claroshop{
+        width: 60%;
+        font-size: 1.2rem;
+        padding: 3%;
+    }
+    .col1_comienzaavender_claroshop{flex-direction: column;}
+    .col11_comienzaavender_claroshop{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        border-bottom: 2px solid #80808057;
+        border-right: none;
+        width: 95%;
+    }
+    .col11_comienzaavender_claroshop.centro {padding: 10px 0;}
+    .col11_comienzaavender_claroshop p{
+        width: 72% !important;
+        font-size: 1rem;
+    }
+    .col11_comienzaavender_claroshop img{
+        width: 25%;
+        margin: auto;
+    }
+    .col21_comienzaavender_claroshop{width: 100%;}
+    .col21_comienzaavender_claroshop p{font-size: 0.8rem;}
+    .telmex-p{
+        right: calc(24% - 72.5px);
+        margin-top: -40%;
+        width: 145px;
+    }
+    .tarifas-p{margin-top: -34%;}
+    .publica-p{
+        margin-top: -74%;
+        left: calc(50% - 150px);
+    }
+    .entregas-p{
+        width: 55%;
+        margin-top: -30%;
+    }
+    .entregas-p p{font-size: 0.7rem;}
+    .entregas-p img{margin-left: 5px;}
+    .expande-p{left: calc(50% - 116px)}
+    .logo-claroshop{
+        width: 
+        30%;
+    }
+    .monitorea-p{right: 4%;}
+    .red-vender{width: 25%;}
+    .red-vender p{font-size: 0.8rem;}
+    .ver-video-vender{font-size: 0.9rem;}
+    .informacion-titulo-vender{font-size: 1rem;}
+    .informacion-titulo-vender img{width: 7%;}
+    .informacion-texto-vender{font-size: 0.8rem;}
+    .columnas_vender{
+        width: 90%;
+        margin: auto;
+    }
+    .tarifas-tabla{font-size: 13px;}
+    .conectate-video{height: 40vh;}
+    .titulo-devoluciones-pop{font-size: 1rem;}
+    .subtit-devoluciones-pop{font-size: 0.8rem;}
+    .imagen-devoluciones p{
+        margin-top: -32px;
+        font-size: 1rem;
+        width: 75%;
+    }
+    .imagen-pop{width: 70%;}
+    .devoluciones-informacion{width: 90%;}
+    .detalles-devoluciones{font-size: 0.9rem;}
+    .correo-pop{
+        width: 85%;
+        font-size: 0.9rem;
+    }
+    .informacion-parrafo-vender{padding: 2% 0;}
+    .redes-sociales-vender{padding-bottom: 5%;}
+}
+@media screen and (max-width: 320px) {
+    .banner-superior-vender p{font-size: 2rem;}
+    .col11_comienzaavender_claroshop p{
+        font-size: 0.9rem;
+        width: 74% !important;
+    }
+    .buttonbannerprincipal_comienzaavender_claroshop{width: 70%;}
+    .imagen-devoluciones p{margin-top: -30px;}
+    .correo-pop{font-size: 0.8rem;}
+    .col21_comienzaavender_claroshop p{font-size: 0.6rem;}
+    .telmex-p{
+        right: calc(24% - 62.5px);
+        margin-top: -39%;
+        width: 125px;
+    }
+    .informacion-titulo-vender{font-size: 0.9rem;}
 }
