@@ -85,6 +85,10 @@ body {
     background-position: center;
 }
 
+.img-express{
+    width: 180px;
+}
+
 .navbar-light .navbar-nav .nav-link{
     font-weight: 600;
 }
@@ -334,7 +338,8 @@ body {
     .btn-pt{
         padding-top: 3rem !important;
     }
-    .img-m{
+    .img-m,
+    .img-express{
         width: 220px;
     }
     .text-titm{
