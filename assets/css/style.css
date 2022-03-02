@@ -64,6 +64,10 @@ body {
     }
 }
 
+.light{
+    font-weight: 400 !important;
+}
+
 .img-lc{
     text-align: center !important;
 }
