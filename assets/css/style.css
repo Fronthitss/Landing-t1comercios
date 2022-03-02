@@ -16,7 +16,7 @@ body {
 
 @media (min-width: 768px) {
     .container-home-1 {
-        margin-top: 7px;
+        margin-top: 55px;
     }
 }
 
@@ -68,6 +68,10 @@ body {
     font-weight: 400 !important;
 }
 
+.ban-pt-px{
+    padding: 66px 30px 0px;
+}
+
 .img-lc{
     text-align: center !important;
 }
@@ -85,6 +89,10 @@ body {
     font-weight: 600;
 }
 
+.button-t1{
+    width: 182px;
+}
+
 /* BANNER */
 .iframe-movil{
     height: 230px;
@@ -93,10 +101,15 @@ body {
 .title-h1,
 .title-h4{
     color: #000;
-    font-size: 1.1em !important;
+    font-size: 1.4em !important;
     font-weight: 600;
     text-align: center;
     padding-bottom: 0.5em;
+}
+
+.title-h1 img{
+    margin: 0 20px 12px;
+    vertical-align: middle;
 }
 
 /* INFO */
